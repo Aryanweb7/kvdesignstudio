@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect Portfolio</title>
+    <link rel="stylesheet" href="Architect.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            background-image: url("pexels-apasaric-325185 (1).jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        header .logo {
+            font-size: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 80px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        section p, section ul {
+            font-size: 1em;
+            margin: 15px 0;
+        }
+
+        .project-gallery {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .project-track {
+            display: flex;
+            animation: scrollGallery 12s linear infinite;
+        }
+
+        .project-item {
+            flex: 0 0 100%;
+            margin: 0;
+            text-align: center;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @keyframes scrollGallery {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+
+        .map iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            section p, section ul {
+                font-size: 0.9em;
+            }
+
+            .project-item img {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 10px;
+            }
+
+            header nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header .logo {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            header nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">KV Architect Studio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero">
+            <h1>Manage the entire Life cycle of building projects</h1>
+            <p>From concept to completion.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About the Architect</h2>
+            <img src="c:\wamp64\www\web_development\Architect\KV LOGO _page-0001.png" height="300" width="400" alt="Architect Logo">
+            <p>KV design studio is an architectural firm with over 7 years of experience, designing Residential, Commercial, Interior & Institutional projects, including building permissions for PCMC, PMC, PMRDA.</p>
+            <h3>
+                <img src="download (1).jpeg" height="40" width="40" alt="Instagram Icon">
+                <a href="https://www.instagram.com/kvdesignstudio_7812/?utm_source=ig_web_button_share_sheet" style="color: black;">Instagram</a>
+            </h3>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-gallery">
+                <div class="project-track">
+                    <div class="project-item">
+                        <img src="pexels-expect-best-79873-323780.jpg" alt="Home Decor">
+                        <h3>Home Decor</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="pexels-dropshado-2251247.jpg" alt="Urban Office">
+                        <h3>Urban Office</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="pexels-expect-best-79873-323775.jpg" alt="Luxury Residence">
+                        <h3>Luxury Residence</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="332785659_1302451510692827_1614607449091359144_n.jpg" alt="Luxury Residence">
+                        <h3>Luxury Residence</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="142335181_789176322025094_1200532463956676504_n.jpg" alt="Luxury Residence">
+                        <h3>Luxury Residence</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services</h2>
+            <h3>Architectural | Interior | Building Permissions | Urban Planning & Landscape Design</h3>
+
+            <h4>Architectural</h4>
+            <ul>
+                <li>Plot layout + setting out plan</li>
+                <li>Centre line + face line plan</li>
+                <li>Floor plan drawings</li>
+                <li>Section drawings</li>
+                <li>Elevation drawings</li>
+                <li>Working drawings</li>
+            </ul>
+
+            <h4>Structural Drawings</h4>
+            <ul>
+                <li>Footing reinforcement details</li>
+                <li>Plinth beam details</li>
+                <li>Column details</li>
+                <li>Slab and beam details</li>
+                <li>Staircase reinforcement details</li>
+            </ul>
+
+            <h4>3D Elevation</h4>
+            <ul>
+                <li>3D view</li>
+            </ul>
+
+            <h4>Interior Work</h4>
+            <ul>
+                <li>Concept and planning</li>
+                <li>Floor plans</li>
+                <li>3D views</li>
+                <li>Material selection</li>
+                <li>Cost estimations</li>
+                <li>Site visit</li>
+            </ul>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <blockquote>
+                <p>"Absolutely stunning designs that exceeded our expectations."</p>
+                <cite>- Jane Doe</cite>
+            </blockquote>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="Contact">
+                <h2>Contact Details</h2>
+                <p style="font-weight: bold;">
+                    Architect: Ar. Kiran Vavale<br>
+                    Contact: 9604067802<br> 
+                    Email: kvdesignstudio7812@gmail.com
+                </p>
+            </div>
+            <div class="map">
+                <iframe src="https://maps.app.goo.gl/UtQkYi5432Sh47Cy5" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Architect Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
